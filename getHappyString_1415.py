@@ -1,4 +1,8 @@
 class Solution:
+    """
+    Time Complexity: O(n) - We iterate through the length n twice.
+    Note: this is mathematically the optimal solution.
+    """
     def getHappyString(self, n: int, k: int) -> str:
         S = 3*2**(n-1)
         if k > S:
@@ -39,7 +43,5 @@ class Solution:
                     else:
                         last = "b"
                 nword += last
-
             count += 1
-            
         return nword
